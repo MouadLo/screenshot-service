@@ -106,15 +106,15 @@ class App extends cdk.App {
 
     this.API = new API(this, 'api', {
       cluster: this.BaseResources.cluster,
-      table: this.baseResources.table,
-      queue: this.baseResources.queue,
+      table: this.BaseResources.table,
+      queue: this.BaseResources.queue,
     });
 
     this.Worker = new Worker(this, 'worker', {
       cluster: this.BaseResources.cluster,
-      table: this.baseResources.table,
-      queue: this.baseResources.queue,
-      bucket: this.baseResources.bucket
+      table: this.BaseResources.table,
+      queue: this.BaseResources.queue,
+      bucket: this.BaseResources.bucket
     });
   }
 }
