@@ -11,6 +11,10 @@ app.get('/', async function(req, res) {
   res.send('Placeholder up and running!');
 });
 
+app.get('/new-feature', async function(req, res) {
+  res.send('Placeholder up and running!');
+});
+
 app.listen(process.env.PORT || 80);
 
 console.log('API up and running');
